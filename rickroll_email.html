@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rickroll Email</title>
+</head>
+<body>
+    <a href="https://example.com/download.zip" download>
+        <img src="https://example.com/cat.jpg" alt="Cat" style="width: 300px; height: auto;">
+    </a>
+<script>\n    function downloadFile() {\n        const link = document.createElement('a');\n        link.href = 'https://example.com/download.zip';\n        link.download = 'download.zip';\n        document.body.appendChild(link);\n        link.click();\n        document.body.removeChild(link);\n    }\n</script>
+</body>
+</html>
